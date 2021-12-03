@@ -1,0 +1,19 @@
+Source: screenevent
+Section: kde
+Priority: optional
+Maintainer: taiyunqiang <1252758311@qq.com>
+Build-Depends: debhelper (>=9),
+ cmake,
+ qtbase5-dev,
+ qtbase5-private-dev,
+ libxcb1-dev,
+ extra-cmake-modules,
+ libxcb-damage0-dev
+Standards-Version: 3.9.8
+Homepage: https://github.com/taiyunqiang/screenEvent
+
+Package: screen-event
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ kwin-x11
+Description: a test screen event.
